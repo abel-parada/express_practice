@@ -7,12 +7,23 @@ router.get('/', (req,res) => {
 
 //get users
 router.get('/new',(req,res) => {
-    res.send('Users new form');
+    res.render('users/new', {firstName:"TESTING EJS"});//we ask to render this page from the views folder
 });
 
 //post user
 router.post('/', (req,res) => {
-    res.send('Create User');
+    // res.send('Create User');
+    const isValid = true;
+    if(isValid){
+        users.push({firstName: req.body.firstName});
+        res.redirect(`/users/${users.length - 1}`)
+    }
+    else {
+        console.log("Error");
+        res.render('users/new',{firstName: req.body.firstName});
+    }
+    // console.log(req.body.firstName);
+    // res.send('Hello, I understand this!');
 });
 
 //get/put/delete by id
