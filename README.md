@@ -15,7 +15,7 @@ Built with:
 ## Dependencies
 
 1. Express will be used for the middleware to create various CRUD endpoints.
-2. Nodemon to restart our server every time we save our file.
+2. EJS to render pages that read data dinamically.
 3. Dotenv to manage a .env file.
 
 ## Setup and usage
