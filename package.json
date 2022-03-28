@@ -1,0 +1,27 @@
+{
+  "name": "express-practice",
+  "version": "1.0.0",
+  "description": "A project to practice express web server framework",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abel-parada/express_practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abel-parada/express_practice/issues"
+  },
+  "homepage": "https://github.com/abel-parada/express_practice#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
